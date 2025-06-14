@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #d1ffd5, #79f58a) fixed;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.wholePage {
+  position: relative;
+}
+
+.content {
+  margin: 5%;
+}
+
+.plantImage {
+  position: absolute;
+  right: 80px;
+  top: 100px;
+  bottom: 0;
+}
+
+.plantImage img {
+  height: 500px;
+  width: 500px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title h2 {
+  color: rgb(17, 126, 17);
+}
+.title a,
+a:visited {
+  text-decoration: none;
+}
+.info p {
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+
+  animation: typingEffect 5s steps(40, end);
+}
+
+@keyframes typingEffect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.no-display {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+.form {
+  margin-top: 50px;
+}
+
+.btn {
+  border: 1px solid rgb(17, 126, 17);
+  border-width: 0.01em;
+  border-radius: 20px;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  padding: 0 8px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.choose-file-btn {
+  font-size: 0.7em;
+  font-weight: 1300;
+  color: rgb(17, 126, 17);
+}
+
+#upload-label {
+  font-size: 0.5em;
+  margin-left: 1%;
+}
+
+.picked-image-analyze {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.analyze-btn {
+  padding: 0 8px;
+  font-size: 0.7em;
+  font-weight: 1300;
+  color: white;
+  background-color: rgb(17, 126, 17);
+  text-decoration: none;
+}
+
+.displayinfo {
+  display: none;
+}
+
+.display-info-content {
+  background-color: white;
+  border-radius: 20px;
+  padding: 3%;
+  margin: auto;
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 20px;
+  text-align: center;
+  /* align-content: space-around; */
+}
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.yes-no-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.yes-no-button {
+  background: linear-gradient(45deg, #d1ffd5, #79f58a) fixed;
+  background-repeat: no-repeat;
+  /* cursor: pointer; */
+}
+
+.display-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+a.reload-index,
+a.reload-index:visited,
+a.reload-index:hover {
+  text-decoration: none;
+  color: rgb(17, 126, 17);
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 0 auto;
+  top: 25%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup-head p {
+  /* margin-top: 0; */
+  color: rgb(17, 126, 17);
+}
+.popup-head .close {
+  /* position: absolute;
+    top: 20px;
+    right: 30px; */
+  transition: all 200ms;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup-head .close:hover {
+  color: #79f58a;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  font-size: 0.8em;
+}
+
+.popup-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.reload-index {
+  font-size: 0.8em;
+}
