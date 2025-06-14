@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Herbal Garden</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
 </head>
 <body>
     <header>
@@ -28,7 +26,10 @@
             <h2>Interactive 3D Models</h2>
             <div id="tulsi" class="model-container">
                 <!-- Tulsi -->
-                <model-viewer src="models/tulsi.glb" alt="Tulsi" auto-rotate camera-controls></model-viewer>
+                <model-viewer src="models/tulsi.glb" alt="Tulsi" auto-rotate camera-controls ar shadow-intensity="1" poster="https://www.greendna.in/cdn/shop/products/1296x728_Holy_Basil.jpg?v=1591462900" loading="lazy">
+                    <div class="progress-bar" slot="progress-bar"></div>
+                    <button slot="ar-button" style="display: none;">View in AR</button>
+                </model-viewer>
                 <div class="plant-info">
                     <h3>Tulsi (Ocimum sanctum)</h3>
                     <p><strong>Common Names:</strong> Holy Basil, Sacred Basil</p>
@@ -43,7 +44,10 @@
 
             <div id="ashwagandha" class="model-container">
                 <!-- Ashwagandha -->
-                <model-viewer src="models/Ahwagandha.glb" alt="Ashwagandha" auto-rotate camera-controls></model-viewer>
+                <model-viewer src="models/Ahwagandha.glb" alt="Ashwagandha" auto-rotate camera-controls ar shadow-intensity="1" poster="https://fitspire.online/cdn/shop/articles/Benefits_of_Ashwagandha_Plant_520x500_800x_1_d4c2ba18-8bd1-4f92-9e42-83e7b7e91db5.jpg?v=1737955955&width=1600" loading="lazy">
+                    <div class="progress-bar" slot="progress-bar"></div>
+                    <button slot="ar-button" style="display: none;">View in AR</button>
+                </model-viewer>
                 <div class="plant-info">
                     <h3>Ashwagandha (Withania somnifera)</h3>
                     <p><strong>Common Names:</strong> Indian Ginseng, Winter Cherry</p>
@@ -57,7 +61,10 @@
 
             <div id="turmeric" class="model-container">
                 <!-- Turmeric -->
-                <model-viewer src="models/Turmeric.glb" alt="Turmeric" auto-rotate camera-controls></model-viewer>
+                <model-viewer src="models/Turmeric.glb" alt="Turmeric" auto-rotate camera-controls ar shadow-intensity="1" poster="https://5.imimg.com/data5/SELLER/Default/2024/6/427041326/IK/XT/SC/46470149/c.png" loading="lazy">
+                    <div class="progress-bar" slot="progress-bar"></div>
+                    <button slot="ar-button" style="display: none;">View in AR</button>
+                </model-viewer>
                 <div class="plant-info">
                     <h3>Turmeric (Curcuma longa)</h3>
                     <p><strong>Common Names:</strong> Haldi, Indian Saffron</p>
@@ -71,7 +78,10 @@
 
             <div id="cinnamon" class="model-container">
                 <!-- Cinnamon -->
-                <model-viewer src="models/Cinnamon.glb" alt="Cinnamon" auto-rotate camera-controls></model-viewer>
+                <model-viewer src="models/Cinnamon.glb" alt="Cinnamon" auto-rotate camera-controls ar shadow-intensity="1" poster="https://images.meesho.com/images/products/321362674/pvryp_512.webp" loading="lazy">
+                    <div class="progress-bar" slot="progress-bar"></div>
+                    <button slot="ar-button" style="display: none;">View in AR</button>
+                </model-viewer>
                 <div class="plant-info">
                     <h3>Cinnamon (Cinnamomum verum)</h3>
                     <p><strong>Common Names:</strong> Ceylon Cinnamon, True Cinnamon</p>
@@ -85,7 +95,10 @@
 
             <div id="cardamom" class="model-container">
                 <!-- Cardamom -->
-                <model-viewer src="models/Cardamom.glb" alt="Cardamom" auto-rotate camera-controls></model-viewer>
+                <model-viewer src="models/Cardamom.glb" alt="Cardamom" auto-rotate camera-controls ar shadow-intensity="1" poster="https://m.media-amazon.com/images/I/81dvogopKZL._UF1000,1000_QL80_.jpg" loading="lazy">
+                    <div class="progress-bar" slot="progress-bar"></div>
+                    <button slot="ar-button" style="display: none;">View in AR</button>
+                </model-viewer>
                 <div class="plant-info">
                     <h3>Cardamom (Elettaria cardamomum)</h3>
                     <p><strong>Common Names:</strong> True Cardamom</p>
@@ -99,7 +112,10 @@
 
             <div id="clove" class="model-container">
                 <!-- Clove -->
-                <model-viewer src="models/clove.glb" alt="Clove" auto-rotate camera-controls></model-viewer>
+                <model-viewer src="models/clove.glb" alt="Clove" auto-rotate camera-controls ar shadow-intensity="1" poster="https://cdn-image.blitzshopdeck.in/ShopdeckCatalogue/tr:f-webp,w-600,fo-auto/659e177dd1fb7720da83da3e/media/Clove_Plant___Labango_Plant__Pack_Of_1__1705128419982_9chtqn8etglluj1.jpg" loading="lazy">
+                    <div class="progress-bar" slot="progress-bar"></div>
+                    <button slot="ar-button" style="display: none;">View in AR</button>
+                </model-viewer>
                 <div class="plant-info">
                     <h3>Clove (Syzygium aromaticum)</h3>
                     <p><strong>Common Names:</strong> Clove Buds</p>
@@ -133,7 +149,7 @@
                onmouseout="this.style.backgroundColor='#008CBA';">View suggested herbal plants</a>
         </p>
                 
-        <p>&copy; 2024 Virtual Herbal Garden. All rights reserved.</p>
+        <p>© 2024 Virtual Herbal Garden. All rights reserved.</p>
         <p>Made by <a >Team Dev Discoverers</a></p>
     </footer>
 
